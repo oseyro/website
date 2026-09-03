@@ -19,7 +19,7 @@ Use `npm install` once, then `npm run dev`. Validate a production release with `
 The production build is a static export in `dist/client`. It requires Node.js
 22.13 or newer during the build, but no permanently running Node.js application.
 
-Configure the Plesk Git deployment for `main` with `/oseyro.com` as the deployment
+Configure the Plesk Git deployment for `main` with `httpdocs` as the deployment
 path. Run these additional deployment actions with the Node.js 22 toolchain:
 
 ```sh
@@ -27,7 +27,7 @@ PATH=/opt/plesk/node/22/bin:$PATH /opt/plesk/node/22/bin/npm ci
 PATH=/opt/plesk/node/22/bin:$PATH /opt/plesk/node/22/bin/npm run build
 ```
 
-Set the domain document root to `/oseyro.com/dist/client`. If the selected Plesk
+Set the domain document root to `httpdocs/dist/client`. If the selected Plesk
 Node.js 22 installation uses a different directory, replace the two absolute
 tool paths accordingly.
 
