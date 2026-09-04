@@ -51,6 +51,17 @@ export function LandingPage({ language }: { language: Language }) {
       </section>
       <section className="content-section" id={language === 'de' ? 'funktionen' : 'features'}>
         <div className="section-heading"><p>{content.sectionEyebrow}</p><h2>{content.sectionTitle}</h2><span>{content.sectionIntro}</span></div>
+        <figure className="flow-visual">
+          <Image
+            src="/oseyro-calm-flow.jpg"
+            alt={language === 'de'
+              ? 'Nachrichten, Aufgaben, Wissen und Termine fließen in einem geordneten Serviceprozess zusammen.'
+              : 'Messages, tasks, knowledge and schedules flow into one organized service process.'}
+            width={1536}
+            height={1024}
+            sizes="(max-width: 1168px) calc(100vw - 48px), 1120px"
+          />
+        </figure>
         <div className="feature-grid">
           {content.features.map(([title, copy], index) => {
             const icons = [Inbox, ListChecks, CalendarDays, Layers3, BrainCircuit, ShieldCheck];

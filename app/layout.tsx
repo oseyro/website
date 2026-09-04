@@ -7,7 +7,14 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://oseyro.com'),
   title: 'Oseyro — Service, der sich selbst organisiert',
   description: 'Oseyro verbindet Kundenservice, Aufgaben, Wissen und Kalender in einem ruhigen, sicheren Arbeitsbereich.',
-  icons: { icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }, { url: '/favicon.ico' }], apple: '/apple-touch-icon.png' },
+  icons: {
+    icon: [
+      { url: '/favicon-oseyro.ico', sizes: '16x16 32x32 48x48' },
+      { url: '/favicon-oseyro.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon-oseyro.ico',
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     title: 'Oseyro — Service that organizes itself',
     description: 'Customer service, tasks, knowledge and calendars in one calm workspace.',
